@@ -1,0 +1,290 @@
+/* css variables */
+:root {
+  --iris: #4d5ae5;
+  --navyblue: #2e2f42;
+  --white: #ffff;
+  --cloud: #f4f4fd;
+  --cornflower: #e7e9fc;
+  --ocean: #404bbf;
+  --slate: #434455;
+}
+
+/* CSS RESET */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  letter-spacing: 0.03em;
+  color: var(--slate);
+}
+
+.section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.container {
+  width: 1158px;
+  margin-left: 156px;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  border-bottom: 1px;
+}
+
+.header-navigation {
+  display: flex;
+  align-items: center;
+}
+
+.nav-menu.list {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin-left: 60px;
+}
+
+.contacts-menu.list {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  margin-right: 156px;
+  gap: 40px;
+}
+
+/* remove bullet points in lists */
+.list {
+  list-style: none;
+}
+
+.logo-link {
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  text-decoration: none;
+}
+
+.logo {
+  color: var(--iris);
+}
+
+.studio {
+  color: var(--navyblue);
+}
+
+.contacts-menu .item {
+  color: var(--slate);
+  text-decoration: none;
+  font-weight: 400;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.nav-menu .page {
+  color: var(--navyblue);
+  text-decoration: none;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.nav-menu .page:hover,
+.nav-menu .page:focus,
+.nav-menu .page.current,
+.contacts-menu .item:hover,
+.contacts-menu .item:focus {
+  color: var(--iris);
+}
+
+.hero-title {
+  color: var(--white);
+  font-size: 56px;
+  letter-spacing: 0.04em;
+  text-align: center;
+  line-height: 1.07;
+  margin-bottom: 48px;
+}
+
+.bg-team {
+  background-color: var(--cloud);
+}
+
+.bg-hero {
+  background-color: var(--navyblue);
+}
+
+.button {
+  border-color: transparent;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.button.primary {
+  color: white;
+  background-color: var(--iris);
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  display: block;
+  margin: 0 auto;
+}
+
+.button.primary:hover,
+.button.primary:focus {
+  background-color: var(--ocean);
+}
+
+.section-title {
+  font-size: 36px;
+  line-height: 1.17;
+  color: var(--navyblue);
+  text-align: center;
+}
+
+.button.filter {
+  font-weight: 500;
+  line-height: 1.62;
+  border-radius: 4px;
+  background: var(--cloud, #f4f4fd);
+  color: var(--iris);
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.button.filter:hover,
+.button.filter:focus,
+.button.filter.current {
+  background: var(--ocean);
+  color: var(--cloud);
+}
+
+.benefits.list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.benefits .title {
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--navyblue);
+  line-height: 3;
+}
+
+.benefits .description {
+  color: var(--slate);
+  line-height: 1.71;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.what-we-do.list {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 112px;
+}
+
+.team.list {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 112px;
+}
+
+.team-card {
+  align-items: center;
+}
+
+.team .name {
+  color: var(--navyblue);
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  text-align: center;
+  margin-top: 32px;
+  margin-bottom: 8px;
+}
+
+.team .position {
+  color: var(--slate);
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.filters.list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-bottom: 72px;
+}
+
+.footer-description {
+  color: var(--cloud);
+  padding-top: 20px;
+}
+
+.page-footer.bg-footer {
+  background-color: var(--navyblue);
+}
+
+.page-footer-container {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.studio-footer {
+  color: var(--cloud);
+}
+
+.projects.list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
+}
+
+.project .name {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  color: var(--navyblue);
+  margin-top: 32px;
+  margin-bottom: 8px;
+}
+
+.project .type {
+  color: var(--slate);
+  font-weight: 400;
+  line-height: 1.87;
+  margin-bottom: 32px;
+}
+
+.project {
+  text-decoration: none;
+}
