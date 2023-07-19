@@ -43,7 +43,16 @@ body {
   margin-left: 156px;
 }
 
-.header-container {
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+/* PAGE HEADER section */
+.container.menu {
   display: flex;
   align-items: center;
   padding-top: 24px;
@@ -51,7 +60,24 @@ body {
   border-bottom: 1px;
 }
 
-.header-navigation {
+.page,
+.contact {
+  color: var(--navyblue);
+  text-decoration: none;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.page:hover,
+.page:focus,
+.page.current,
+.contact.link:hover,
+.contact.link:focus {
+  color: var(--iris);
+}
+
+.navigation {
   display: flex;
   align-items: center;
 }
@@ -71,11 +97,6 @@ body {
   gap: 40px;
 }
 
-/* remove bullet points in lists */
-.list {
-  list-style: none;
-}
-
 .logo-link {
   font-family: "Raleway", sans-serif;
   font-size: 18px;
@@ -93,28 +114,14 @@ body {
   color: var(--navyblue);
 }
 
-.contacts-menu .item {
-  color: var(--slate);
-  text-decoration: none;
-  font-weight: 400;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
+/* HERO section */
+.bg-hero {
+  background-color: var(--navyblue);
 }
 
-.nav-menu .page {
-  color: var(--navyblue);
-  text-decoration: none;
-  font-weight: 500;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-}
-
-.nav-menu .page:hover,
-.nav-menu .page:focus,
-.nav-menu .page.current,
-.contacts-menu .item:hover,
-.contacts-menu .item:focus {
-  color: var(--iris);
+.hero {
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 
 .hero-title {
@@ -124,14 +131,6 @@ body {
   text-align: center;
   line-height: 1.07;
   margin-bottom: 48px;
-}
-
-.bg-team {
-  background-color: var(--cloud);
-}
-
-.bg-hero {
-  background-color: var(--navyblue);
 }
 
 .button {
@@ -152,6 +151,8 @@ body {
   letter-spacing: 0.06em;
   display: block;
   margin: 0 auto;
+  padding-left: 32px;
+  padding-right: 32px;
 }
 
 .button.primary:hover,
@@ -159,30 +160,7 @@ body {
   background-color: var(--ocean);
 }
 
-.section-title {
-  font-size: 36px;
-  line-height: 1.17;
-  color: var(--navyblue);
-  text-align: center;
-}
-
-.button.filter {
-  font-weight: 500;
-  line-height: 1.62;
-  border-radius: 4px;
-  background: var(--cloud, #f4f4fd);
-  color: var(--iris);
-  padding-left: 24px;
-  padding-right: 24px;
-}
-
-.button.filter:hover,
-.button.filter:focus,
-.button.filter.current {
-  background: var(--ocean);
-  color: var(--cloud);
-}
-
+/* BENEFITS section */
 .benefits.list {
   display: flex;
   justify-content: space-between;
@@ -202,20 +180,29 @@ body {
   font-weight: 400;
 }
 
+/* WHAT WE DO section */
+.section-title {
+  font-size: 36px;
+  line-height: 1.17;
+  color: var(--navyblue);
+  text-align: center;
+}
+
 .what-we-do.list {
   display: flex;
   justify-content: space-between;
   margin-top: 112px;
 }
 
+/* TEAM section */
+.bg-team {
+  background-color: var(--cloud);
+}
+
 .team.list {
   display: flex;
   justify-content: space-between;
   margin-top: 112px;
-}
-
-.team-card {
-  align-items: center;
 }
 
 .team .name {
@@ -236,6 +223,8 @@ body {
   margin-bottom: 32px;
 }
 
+/* PORTFOLIO section */
+/* FILTERS section */
 .filters.list {
   display: flex;
   justify-content: center;
@@ -243,24 +232,24 @@ body {
   margin-bottom: 72px;
 }
 
-.footer-description {
+.button.filter {
+  font-weight: 500;
+  line-height: 1.62;
+  border-radius: 4px;
+  background: var(--cloud, #f4f4fd);
+  color: var(--iris);
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.button.filter:hover,
+.button.filter:focus,
+.button.filter.current {
+  background: var(--ocean);
   color: var(--cloud);
-  padding-top: 20px;
 }
 
-.page-footer.bg-footer {
-  background-color: var(--navyblue);
-}
-
-.page-footer-container {
-  padding-top: 100px;
-  padding-bottom: 100px;
-}
-
-.studio-footer {
-  color: var(--cloud);
-}
-
+/* PROJECTS section */
 .projects.list {
   display: flex;
   flex-wrap: wrap;
@@ -287,4 +276,20 @@ body {
 
 .project {
   text-decoration: none;
+}
+
+/* FOOTER section */
+.page-footer.bg-footer {
+  background-color: var(--navyblue);
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.studio-footer {
+  color: var(--cloud);
+}
+
+.footer-description {
+  color: var(--cloud);
+  padding-top: 20px;
 }

@@ -3,14 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Webstudio | Portfolio</title>
+    <title>Portfolio</title>
 
     <!-- Fonts -->
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-
+    <link rel="preconnect" href="https://fonts.googleapis.com " />
+    <link rel="preconnect" href="https://fonts.gstatic.com " crossorigin />
     <!-- CSS -->
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
@@ -18,33 +19,35 @@
   <!-- Body -->
   <body>
     <!-- Header -->
-    <header class="header">
-      <div class="container header-container">
-        <nav class="header-navigation">
+    <header class="page-header">
+      <div class="container menu">
+        <nav class="navigation">
           <a class="logo-link" href="./index.html"
             ><span class="logo">WEB</span><span class="studio">STUDIO</span>
           </a>
 
           <ul class="nav-menu list">
-            <li>
-              <a class="page current" href="./index.html">Studio</a>
+            <li class="item">
+              <a class="page link" href="./index.html">Studio</a>
             </li>
-            <li>
-              <a class="page" href="./portfolio.html">Portfolio</a>
+            <li class="item">
+              <a class="page current link" href="./portfolio.html">Portfolio</a>
             </li>
-            <li>
-              <a class="page" href="#">Contacts</a>
+            <li class="item">
+              <a class="page link" href="#">Contacts</a>
             </li>
           </ul>
         </nav>
         <ul class="contacts-menu list">
-          <li>
-            <a class="item" href="mailto:info@devstudio.com"
+          <li class="item">
+            <a class="contact link" href="mailto:info@devstudio.com"
               >info@devstudio.com</a
             >
           </li>
-          <li>
-            <a class="item" href="tel:+110001111111">+11 (000) 111-11-11</a>
+          <li class="item">
+            <a class="contact link" href="tel:+110001111111"
+              >+11 (000) 111-11-11</a
+            >
           </li>
         </ul>
       </div>
@@ -55,127 +58,160 @@
       <!-- Section 1-->
       <section class="section">
         <div class="container">
+          <!-- Filters -->
           <ul class="filters list">
-            <li>
+            <li class="space">
               <button class="button filter current" type="button">All</button>
             </li>
-            <li>
+            <li class="space">
               <button class="button filter" type="button">Web Site</button>
             </li>
-            <li><button class="button filter" type="button">App</button></li>
-            <li><button class="button filter" type="button">Design</button></li>
-            <li>
+            <li class="space">
+              <button class="button filter" type="button">App</button>
+            </li>
+            <li class="space">
+              <button class="button filter" type="button">Design</button>
+            </li>
+            <li class="space">
               <button class="button filter" type="button">Marketing</button>
             </li>
           </ul>
 
+          <!-- Projects -->
           <ul class="projects list">
-            <li>
-              <a href="" class="project">
+            <li class="project-card">
+              <a href="" class="project link">
                 <img
                   src="./images/banking.jpg"
                   alt="banking app screenshots"
                   width="360"
                   height="300"
+                  class="image"
                 />
-                <h2 class="name">Banking App Interface Concept</h2>
-                <p class="type">App</p>
+                <div class="substrate">
+                  <h2 class="name">Banking App Interface Concept</h2>
+                  <p class="type">App</p>
+                </div>
               </a>
             </li>
-            <li>
-              <a href="" class="project">
+            <li class="project-card">
+              <a href="" class="project link">
                 <img
                   src="./images/cashless.jpg"
                   alt="mobile scanning qr code"
                   width="360"
                   height="300"
+                  class="image"
                 />
-                <h2 class="name">Cashless Payment</h2>
-                <p class="type">Marketing</p>
+                <div class="substrate">
+                  <h2 class="name">Cashless Payment</h2>
+                  <p class="type">Marketing</p>
+                </div>
               </a>
             </li>
-            <li>
-              <a href="" class="project">
+            <li class="project-card">
+              <a href="" class="project link">
                 <img
                   src="./images/meditation.jpg"
                   alt="mobile with laptop at the background"
                   width="360"
                   height="300"
+                  class="image"
                 />
-                <h2 class="name">Meditation App</h2>
-                <p class="type">App</p>
+                <div class="substrate">
+                  <h2 class="name">Meditation App</h2>
+                  <p class="type">App</p>
+                </div>
               </a>
             </li>
-            <li>
-              <a href="" class="project">
+            <li class="project-card">
+              <a href="" class="project link">
                 <img
                   src="./images/taxi.jpg"
                   alt="car dash with mobile GPS"
                   width="360"
                   height="300"
+                  class="image"
                 />
-                <h2 class="name">Taxi Service</h2>
-                <p class="type">Marketing</p>
+                <div class="substrate">
+                  <h2 class="name">Taxi Service</h2>
+                  <p class="type">Marketing</p>
+                </div>
               </a>
             </li>
-            <li>
-              <a href="" class="project">
+            <li class="project-card">
+              <a href="" class="project link">
                 <img
                   src="./images/screen.jpg"
                   alt="mobile and wallpaper screenshots"
                   width="360"
                   height="300"
+                  class="image"
                 />
-                <h2 class="name">Screen Illustrations</h2>
-                <p class="type">Design</p>
+                <div class="substrate">
+                  <h2 class="name">Screen Illustrations</h2>
+                  <p class="type">Design</p>
+                </div>
               </a>
             </li>
-            <li>
-              <a href="" class="project">
+            <li class="project-card">
+              <a href="" class="project link">
                 <img
                   src="./images/online.jpg"
                   alt="woman in orange dress holding mobile"
                   width="360"
                   height="300"
+                  class="image"
                 />
-                <h2 class="name">Online Courses</h2>
-                <p class="type">Marketing</p>
+                <div class="substrate">
+                  <h2 class="name">Online Courses</h2>
+                  <p class="type">Marketing</p>
+                </div>
               </a>
             </li>
-            <li>
-              <a href="" class="project">
+            <li class="project-card">
+              <a href="" class="project link">
                 <img
                   src="./images/stories.jpg"
                   alt="screenshots of instagram stories"
                   width="360"
                   height="300"
+                  class="image"
                 />
-                <h2 class="name">Instagram Stories Concept</h2>
-                <p class="type">Design</p>
+                <div class="substrate">
+                  <h2 class="name">Instagram Stories Concept</h2>
+                  <p class="type">Design</p>
+                </div>
               </a>
             </li>
-            <li>
-              <a href="" class="project">
+            <li class="project-card">
+              <a href="" class="project link">
                 <img
                   src="./images/food.jpg"
                   alt="body of a woman holding fruits and veggies in a net bag"
                   width="360"
                   height="300"
+                  class="image"
                 />
-                <h2 class="name">Organic Food</h2>
-                <p class="type">Web Site</p>
+                <div class="substrate">
+                  <h2 class="name">Organic Food</h2>
+                  <p class="type">Web Site</p>
+                </div>
               </a>
             </li>
-            <li>
-              <a href="" class="project">
+            <li class="project-card">
+              <a href="" class="project link">
                 <img
                   src="./images/coffee.jpg"
                   alt="cup of coffee with design cream"
                   width="360"
                   height="300"
+                  class="image"
                 />
-                <h2 class="name">Fresh Coffee</h2>
-                <p class="type">Web Site</p>
+                <div class="substrate">
+                  <h2 class="name">Fresh Coffee</h2>
+                  <p class="type">Web Site</p>
+                </div>
               </a>
             </li>
           </ul>
@@ -185,8 +221,8 @@
 
     <!-- Footer -->
     <footer class="page-footer bg-footer">
-      <div class="container page-footer-container">
-        <a class="logo-link" href="./index.html"
+      <div class="container">
+        <a class="logo-link footer" href="./index.html"
           ><span class="logo">WEB</span
           ><span class="studio-footer">STUDIO</span>
         </a>
