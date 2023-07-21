@@ -56,7 +56,7 @@ body {
 }
 
 .section {
-  padding: 120px 0;
+  padding: 94px 0;
 }
 
 .section.no-top-padding {
@@ -287,7 +287,7 @@ body {
   border-top: 0;
 }
 
-/* PORTFOLIO section */
+/* PORTFOLIO page */
 /* FILTERS section */
 .filters {
   display: flex;
@@ -323,6 +323,12 @@ space + .space {
   flex-wrap: wrap;
   margin-left: -30px;
   margin-top: -30px;
+}
+
+.project-card {
+  flex-basis: calc(100% / 3 - 30px);
+  margin-left: 30px;
+  margin-top: 30px;
 }
 
 .project .name {
